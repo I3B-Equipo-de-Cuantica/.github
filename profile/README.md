@@ -7,6 +7,12 @@ Queremos que todo sea **simple, claro y fácil de usar**, incluso si es la prime
 
 📌 **Objetivo**: que todos podamos trabajar sin miedo a “romper nada” y que sea fácil pasar de investigación a producto.
 
+## 🧩 Reglas comunes a todos los repos
+
+- **No subir datos pesados** (guardar fuera de GitHub).  
+- **README obligatorio** en cada repo: explica qué es, cómo ejecutar y cómo desplegar.  
+- **Simplicidad ante todo**: mejor algo sencillo que nadie tenga miedo de usar.
+- **Código Limpio**: Modularizado y legible.
 ---
 
 ## 🔬 Repositorios de Investigación
@@ -102,13 +108,46 @@ Dentro estarán el **frontend**, el **backend** y la **infraestructura**:
 
 ---
 
-## 🧩 Reglas comunes a todos los repos
+## 📝 Convenciones de commits
 
-- **Commits claros**: usa mensajes como `add:`, `fix:`, `update:`.  
-- **No subir datos pesados** (guardar fuera de GitHub).  
-- **README obligatorio** en cada repo: explica qué es, cómo ejecutar y cómo desplegar.  
-- **Simplicidad ante todo**: mejor algo sencillo que nadie tenga miedo de usar.
-- **Código Limpio**: Modularizado y legible.
+Los mensajes de commit deben ser **claros y breves**.  
+Usamos un **prefijo** para indicar el tipo de cambio:
+
+- `add:` → algo nuevo (archivos, features, experimentos)  
+- `update:` → mejoras o cambios en algo existente  
+- `fix:` → corrección de error  
+- `docs:` → documentación, README, comentarios  
+- `test:` → tests unitarios o de integración  
+- `chore:` → mantenimiento (dependencias, configs, .gitignore…)
+
+
+### Ejemplos
+
+- `add: baseline QLSTM experiment`  
+- `fix: typo in anomaly detection script`  
+- `docs: update project README with setup steps`  
+- `update: improve backend API error handling`  
+- `chore: add Python 3.11 to CI matrix`  
+- `exp: QNLP intent classification run (2025-10-03)`  
+
+### ✨ Tips
+
+- **Un commit = un cambio lógico.**  
+  Ejemplo: si arreglas un bug y además actualizas el README, mejor haz dos commits.  
+- **Primera línea corta** (~50 caracteres máximo).  
+- Puedes añadir más detalle después:  
+
+> fix: handle empty dataset case in QLSTM
+>
+> Added a condition to avoid crash when dataset is empty.
+  
+
+
+
+
+
+
+
 
 
 
