@@ -203,6 +203,8 @@ De este modo, puedes tener varios entornos con versiones diferentes de Python co
          - pyqubo==1.4.0
 > Si existe un **environment_base.yml** con dependencias comunes, usa las mismas versiones para mantener coherencia entre sublíneas.
 
+**Channels:** Repositorios de paquetes desde donde Conda descarga las librerías que instalas. Conda busca en uno o varios canales (repositorios) dónde está el paquete y descarga una versión compatible con tu sistema operativo y tu versión de Python.
+> 
 5. **Crear entorno desde conda (solo la primera vez)**
 ```
 conda env create -f environment.yml
@@ -212,10 +214,10 @@ Conda descargará todas las librerías de Python y del sistema necesarias, gener
 
 6. **Activar el entorno**
 ```
-conda activate circuitos_cuanticos
+conda activate <nombre_entorno>
 ```
 El prompt cambiará para reflejar el entorno activo:
-> (nombre_entorno) PS C:\Users\<usuario>\Documents\research\circuitos_cuanticos>
+> (nombre_entorno) PS C:\Users\<usuario>\Documents\research\<nombre_entorno>
 
 7. **Registrar el entorno para usarlo en Jupyter**
 ```
@@ -238,6 +240,7 @@ conda env create -f environment.yml
 11. **Verificar entornos disponibles**
 ```
 conda env list
+conda list <nombre_libreria> -> paquete(s) instalados desde conda
 ```
 
 
