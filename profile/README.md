@@ -1,4 +1,10 @@
 ## Hola a todos 👋
+¡¡Descargar VSCode!! -> https://code.visualstudio.com/download
+Extensiones:
+   + Git Graph
+   + GitLens
+   + Jupiter
+   + Python
 
 # 📚 Organización de Repositorios
 
