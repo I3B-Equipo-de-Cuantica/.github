@@ -51,7 +51,7 @@ Dentro de cada repo habrá **subcarpetas por sublínea** hasta que la sublinea s
 **La carpeta de onboarding**, recogera nociones básicas:
 
 >```
-> onboarding/ejemplos_básicos
+> onboarding/ejemplos-básicos
 > ├─ README.md # info
 > ├─ notebook.ipynb 
 > ├─ scripts.py 
