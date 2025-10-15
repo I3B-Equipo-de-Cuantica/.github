@@ -126,6 +126,7 @@ Usamos un **prefijo** para indicar el tipo de cambio:
 - `docs:` → documentación, README, comentarios  
 - `test:` → tests unitarios o de integración  
 - `chore:` → mantenimiento (dependencias, configs, .gitignore…)
+- `exp:` → aportaciones a experimentos.
 
 
 ### Ejemplos
