@@ -171,6 +171,14 @@ Cada entorno Conda contiene su **propio ejecutable de Python**, totalmente indep
 
 De este modo, puedes tener varios entornos con versiones diferentes de Python coexistiendo sin conflictos, como por ejemplo: `(base) → Python 3.11`, `(circuitos_cuanticos) → Python 3.10`, `(algoritmos_variacionales) → Python 3.12`, cada uno completamente aislado y con sus dependencias específicas.
 
+**Hay una mejora**: instalar mamba y que él gestione el entorno de dependencias; lo hace en paralelo y resuelve los paquetes mucho más rápido que Conda, gracias a que usa un solver en C++ (libsolv) en lugar del de Python. Además, descarga varios paquetes simultáneamente, muestra un resumen más claro de las operaciones y mantiene compatibilidad total con los comandos y archivos de Conda (environment.yml, conda install, etc.). Es instalar mamba y sustituir conda por mamba en las líneas de comando —por ejemplo, usar mamba create, mamba install o mamba env update en lugar de sus equivalentes con conda. Así, el entorno se resuelve e instala mucho más rápido, aprovechando la resolución en C++ y las descargas paralelas, pero sin cambiar la sintaxis ni la compatibilidad con Conda.
+
+```
+conda activate base
+conda install -c conda-forge mamba
+```
+Después de eso puedes usarlo igual que conda.
+
 ### 🧭 Pasos a seguir para crear un entorno Conda
 
 1. **Descargar e instalar Miniconda (solo la primera vez):**  
