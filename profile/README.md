@@ -235,6 +235,12 @@ conda activate <nombre_entorno>
 El prompt cambiará para reflejar el entorno activo:
 > (nombre_entorno) PS C:\Users\<usuario>\Documents\research\<nombre_entorno>
 
+Si no aparece (nombre_entorno) ejecutar:
+```
+conda init powershell
+```
+reiniciar la consola y activar el entorno otra vez.
+
 7. **Registrar el entorno para usarlo en Jupyter**
 ```
 python -m ipykernel install --user --name <nombre_entorno> --display-name "Python (nombre_entorno)"
