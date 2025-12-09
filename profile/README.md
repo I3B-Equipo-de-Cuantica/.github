@@ -3,7 +3,6 @@
 
 Extensiones:
    + Git Graph
-   + GitLens
    + Jupiter
    + Python
 
