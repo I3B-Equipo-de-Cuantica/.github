@@ -190,10 +190,11 @@ Después de eso puedes usarlo igual que conda.
    - ✅ **Register Miniconda3 as the system Python 3.11** → asocia los archivos `.py` a este Python y lo registra como intérprete por defecto.
 
 2. **Quitar politicas de seguridad de PowerShell para ejecutar scripts (solo la primera vez):**
+   Para abrir PowerShell en VSCode: `Ctrl`+`ñ`
    ```powershell
    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
-3. **Verificar que conda esta instalado correctamente**
+4. **Verificar que conda esta instalado correctamente**
 ```
    conda --version
 ```
